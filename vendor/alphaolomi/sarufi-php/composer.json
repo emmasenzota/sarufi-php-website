@@ -1,0 +1,53 @@
+{
+    "name": "alphaolomi/sarufi-php",
+    "description": "Sarufi for PHP",
+    "keywords": [
+        "alphaolomi",
+        "sarufi",
+        "convesional ai"
+    ],
+    "homepage": "https://github.com/alphaolomi/sarufi-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alpha Olomi",
+            "email": "alphaolomi@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "symfony/yaml": "^5.4",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^1.20"
+    },
+    "suggest": {
+        "symfony/yaml": "To use YAML configuration"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alphaolomi\\Sarufi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alphaolomi\\Sarufi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
