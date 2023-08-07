@@ -1,6 +1,6 @@
 # CodeIgniter 4 Framework with Sarufi AI
 
-## This is a simple example that intergrates sarufi and php language 
+## This is a simple example that intergrates sarufi AI with a webapp using php
 
 Here is a first attempt to use sarufi ai on a php website 
 
